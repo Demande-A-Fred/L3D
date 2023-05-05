@@ -1,0 +1,13 @@
+{
+  "name": "L3D",
+  "version": "2023.05.6",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "Test8.ino.esp32.bin", "offset": 0 },
+      ]
+    }
+  ]
+}
