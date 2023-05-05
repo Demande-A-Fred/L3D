@@ -1,6 +1,6 @@
 {
   "name": "L3D",
-  "version": "2023.05.6",
+  "version": "0.8.1",
   "new_install_prompt_erase": false,
   "builds": [
     {
