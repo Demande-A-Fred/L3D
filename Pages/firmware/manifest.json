@@ -6,7 +6,10 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "Test8.ino.esp32.bin", "offset": 0 }
+        { "path": "bootloader_qio_80m.bin", "offset": 4096 },
+        { "path": "partitions.bin", "offset": 32768 },
+        { "path": "ota.bin", "offset": 57344 },
+        { "path": "firmware.bin", "offset": 65536 }
       ]
     }
   ]
