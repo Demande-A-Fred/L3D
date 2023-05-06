@@ -3,8 +3,8 @@
 
 ## Montage
 
-Si vous n'utilisez que quelques leds (8) il est possible de tout alimenter par le port Usb seulement.
-La carte ESP ne peut pas alimenter une grande puissance par sa sortie.
+Si vous n'utilisez que quelques leds (8) il est possible de tout alimenter par le port Usb seulement.\
+La carte ESP ne peut pas alimenter une grande puissance par sa sortie.\
 Une alimentation externe de qualité est obligatoire sur des longueurs plus importantes que 8/10 Leds suivant que vous alimentez ou non une carte MP3 et/ou un capteur Ultrason.
 
 ### Leds Strip WS2812B
