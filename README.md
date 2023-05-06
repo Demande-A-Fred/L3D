@@ -2,7 +2,7 @@
 
 
 ## Montage
-
+(Img/Leds.jpg)
 
 ## Flashage
 
@@ -19,7 +19,7 @@ Pour les ESP de chez AZ Delivery c'est le CP2102 (le premier lien)
 ## Mise à jour OTA ##
 
 Il est possible de faire des mises à jour à distance (sans cable) après que la carte ait été flashée une première fois par l'outil web.\
-Il suffit d'ouvrir votre navigateur sur la carte concernée (par adresse http://ip.de.la.carte ou par son http://nom.local). Allez dans l'onglet **Configuration** puis dans la section **Mise à jour OTA**.\
+Il suffit d'ouvrir votre navigateur sur la carte concernée (par adresse http://ip.de.la.carte ou par son nom, par défaut http://l3d.local). Allez dans l'onglet **Configuration** puis dans la section **Mise à jour OTA**.\
 
 
    
