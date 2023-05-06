@@ -7,13 +7,30 @@ Si vous n'utilisez que quelques leds (8) il est possible de tout alimenter par l
 La carte ESP ne peut pas alimenter une grande puissance par sa sortie.\
 Une alimentation externe de qualité est obligatoire sur des longueurs plus importantes que 8/10 Leds suivant que vous alimentez ou non une carte MP3 et/ou un capteur Ultrason.
 
-### Leds Strip WS2812B
+### Led Strip WS2812B
+Pin 2 utilisée pour le signal Data vers le Led Strip
+
 ![alt](Img/Leds.jpg)
+
 ### Lecteur MP3 DFMiniPlayer
+Pin 16 vers TX du DFMiniPlayer\
+Pin 17 vers RX du DFMiniPlayer
+
 ![alt](Img/mp3_bb.jpg)
+
 ### Capteur ultrason HC-SR04
+Pin 12 vers Trig du capteur HC-SR04\
+Pin 14 vers Echo du capteur HC-SR04
+
 ![alt](Img/hc-sr04_bb.jpg)
+
 ### Montage complet : Leds Strip WS2812B, DFMiniPlayer, HC-SR04
+Pin 2 utilisée pour le signal Data vers le Led Strip\
+Pin 16 vers TX du DFMiniPlayer\
+Pin 17 vers RX du DFMiniPlayer\
+Pin 12 vers Trig du capteur HC-SR04\
+Pin 14 vers Echo du capteur HC-SR04
+
 ![alt](Img/all_bb.jpg)
 
 ## Flashage
