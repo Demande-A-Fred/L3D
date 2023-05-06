@@ -6,9 +6,8 @@
 
 ## Flashage
 
-Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure. 
-
-[flasher la carte par une page web]([https://](https://demande-a-fred.github.io/L3D/esp.html))
+Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure. \
+https://demande-a-fred.github.io/L3D/esp.html
 
 **Attention TOUTES les données présentes sur la carte seront éffacées**
 
