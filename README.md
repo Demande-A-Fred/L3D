@@ -1,5 +1,5 @@
 # L3D
-L3D est un séquenceur d'effets sur bandeau de Led.\
+L3D est un séquenceur d'effets sur bandeau de Led.
 
 1. [Fonctionnement](#fonctionnement)
 2. [Montage](#montage)
