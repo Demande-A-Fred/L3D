@@ -1,47 +1,76 @@
 # L3D
+L3D est un séquenceur d'effets sur bandeau de Led.\
+
+1. [Fonctionnement](#fonctionnement)
+2. [Montage](#montage)
+3. [Connexion](#connexion)
+4. [Flashage](#flashage)
+5. [Mise à jour par OTA](#mise-%C3%A0-jour-ota)
+   
+## Fonctionnement 
+L3D permet de :
+ * créer des séquences visuelles qui appliquent chacune un effet sur un segment
+ * découper virtuellement le bandeau en plusieurs zones (des segments), qui peuvent se superposer si besoin.
+ * il peut y avoir 8 séquences en même temps
+ * il est possible de déclencher des sons à un instant donné
+ * le programmme peut démarrer/s'arrêter avec à un capteur/bouton
+ * tout est configurable depuis une page web
+
+Une séquence est composée :
+ * d'un effet
+ * de réglages de l'effet (couleurs, rapidité)
+ * d'un temps de début
+ * d'une durée
+
+Les sons sont stockés en MP3 sur une carte SD sur le DFMiniPlayer (max 32Go).
+
+Seul le capteur ultrason HC-SR04 est géré pour le moment.
+
 
 
 ## Montage
 
-Si vous n'utilisez que quelques leds (8) il est possible de tout alimenter par le port Usb seulement.\
-La carte ESP ne peut pas alimenter une grande puissance par sa sortie.\
-Une alimentation externe de qualité est obligatoire sur des longueurs plus importantes que 8/10 Leds suivant que vous alimentez ou non une carte MP3 et/ou un capteur Ultrason.
-
-### Led Strip WS2812B
+### Led Strip WS2812B uniquement
 Pin 2 utilisée pour le signal Data vers le Led Strip
-
 ![alt](Img/Leds.jpg)
 
-### Lecteur MP3 DFMiniPlayer
+### DFMiniPlayer uniquement
 Pin 16 vers TX du DFMiniPlayer\
 Pin 17 vers RX du DFMiniPlayer
-
 ![alt](Img/mp3_bb.jpg)
 
-### Capteur ultrason HC-SR04
+### HC-SR04 uniquement
 Pin 12 vers Trig du capteur HC-SR04\
 Pin 14 vers Echo du capteur HC-SR04
-
 ![alt](Img/hc-sr04_bb.jpg)
 
-### Montage complet : Leds Strip WS2812B, DFMiniPlayer, HC-SR04
+### Leds Strip WS2812B, DFMiniPlayer, HC-SR04
 Pin 2 utilisée pour le signal Data vers le Led Strip\
 Pin 16 vers TX du DFMiniPlayer\
 Pin 17 vers RX du DFMiniPlayer\
 Pin 12 vers Trig du capteur HC-SR04\
 Pin 14 vers Echo du capteur HC-SR04
-
 ![alt](Img/all_bb.jpg)
+
+## Connexion
+
+Une fois connectée sur votre réseau Wifi la carte se retrouve par défaut à l'adresse http://l3d.local \
+En cas de problème de connexion wifi la carte va démarrer en mode AP (Acces Point). Elle se comporte comme une borne wifi sur laquelle vous pouvez vous connecter\
+ssid : L3DAP\
+mot de passe : tonystark\
+Se connecter ensuite sur http://7.7.7.7 parfois http://192.168.4.1 
 
 ## Flashage
 
-Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure. 
+Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure.\
+Après flashage la carte va redémarrer et l'installeur Web va proposer de connecter la carte à votre wifi.
 
+Le Web installeur se trouve à \
 https://demande-a-fred.github.io/L3D/esp.html
 
 **Attention TOUTES les données présentes sur la carte seront éffacées**
 
-La toute première fois il est possible que vous n'aillez pas le pilote de la carte qui soit présent sur votre machine.\
+Lors du tout premier flashage il est possible que la carte n'apparaisse pas si le pilote de la carte n'est pas installé sur votre machine.\
 La page de mise à jour propose de télécharger des pilotes.\
 Suivez le lien de téléchargement proposé par l'installeur, installez les pilotes et ouvez à nouveau le lien de flashage au dessus.\
 Pour les ESP de chez AZ Delivery c'est le CP2102 (le premier lien)
@@ -56,7 +85,7 @@ Il suffit d'ouvrir votre navigateur sur la carte concernée (par adresse http://
    
 ### Firmware
 
-Télécharger le nouveau firmware depuis le dossier **OTA** de cette page Github.\
+Télécharger le nouveau firmware depuis le dossier **OTA** de cette page Github.
 Sur la page de mise à jour OTA de la carte, selectionner **"Firmware"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
 
 Les données de réglages, de configuration, et de séquences seront conservées.
@@ -73,4 +102,4 @@ Sur la page de mise à jour OTA de la carte, selectionner **"Filesystem"** puis 
 **Attention TOUTES les données présentes sur la carte seront éffacées**\
 *Les fichiers Web seront placés dans le code une fois qu'ils auront passé les phases de test et il ne sera plus possible de faire des mises à jour de Filesystem et ainsi de perdre donc les réglages.\
 Leur mise à jour se fera en même temps que le reste du firmware\
-Il est toujours possible d'éffacer les fichiers de réglages de la carte par l'onglet de configuration*
+Il est toujours possible d'éffacer les fichiers de réglages de la carte par la page de configuration*
