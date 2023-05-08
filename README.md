@@ -22,7 +22,8 @@ Une séquence est composée :
  * d'un temps de début
  * d'une durée
 
-Les sons sont stockés en MP3 sur une carte SD sur le DFMiniPlayer (max 32Go).
+Les sons sont stockés en MP3 sur une carte SD sur le DFMiniPlayer (max 32Go).\
+Les fichiers doivent être numérotés avec 4 chiffres, 0001.mp3, 0002.mp3, ...
 
 Seul le capteur ultrason HC-SR04 est géré pour le moment.
 
@@ -39,6 +40,7 @@ Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Leds.jpg)
 
 ### DFMiniPlayer uniquement
+Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
 Pin 16 vers TX du DFMiniPlayer\
 Pin 17 vers RX du DFMiniPlayer
 ![alt](Img/mp3_bb.jpg)
@@ -49,6 +51,7 @@ Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/hc-sr04_bb.jpg)
 
 ### Leds Strip WS2812B, DFMiniPlayer, HC-SR04
+Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
 Pin 2 utilisée pour le signal Data vers le Led Strip\
 Pin 16 vers TX du DFMiniPlayer\
 Pin 17 vers RX du DFMiniPlayer\
