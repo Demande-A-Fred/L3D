@@ -11,7 +11,7 @@ L3D est un séquenceur d'effets sur bandeau de Led.
 L3D permet de :
  * créer des séquences visuelles qui appliquent chacune un effet sur un segment
  * découper virtuellement le bandeau en plusieurs zones (des segments), qui peuvent se superposer si besoin.
- * il peut y avoir 8 séquences en même temps
+ * il peut y avoir 8 séquences en même temps (8 pistes)
  * il est possible de déclencher des sons à un instant donné
  * le programmme peut démarrer/s'arrêter avec à un capteur/bouton
  * tout est configurable depuis une page web
