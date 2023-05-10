@@ -1,5 +1,14 @@
 # L3D
-L3D est un séquenceur d'effets sur bandeau de Led.
+L3D est un projet de séquenceur d'effets pour bandeau LED qui permet de créer des effets lumineux personnalisés, de déclencher des sons et de réagir à la distance à l'aide d'un capteur ultrason.
+
+L3D est un mélange d'ESP32 et des rubans LED qui crée une expérience de lumière et de son synchronisée. J'ai travaillé pour concevoir une carte ESP32 qui contrôle les Leds et permet d'ajouter des effets de lumière pour créer une atmosphère immersive.
+
+En plus de cela, j'ai également ajouté une fonctionnalité optionnelle pour lire des fichiers audio en utilisant un DFMiniPlayer connecté à l'ESP32. Cette fonctionnalité permet de synchroniser la lumière et le son pour une expérience encore plus immersive. En utilisant un capteur ultrason, les utilisateurs peuvent même interagir avec l'ensemble pour lire et arrêter la lecture.
+
+Le séquenceur d'effet est intégré dans l'ESP32 et est facile à personnaliser. Une page web connectée à la carte permet d'ajouter des séquences supplémentaires et d'ajuster tous les autres réglages, tels que le volume, la luminosité et la découpe du bandeau de Leds en segments virtuels.
+
+Si vous êtes intéressé par les effets de lumière et de son, alors ce projet est fait pour vous !
+
 
 1. [Fonctionnement](#fonctionnement)
 2. [Montage](#montage)
@@ -8,25 +17,20 @@ L3D est un séquenceur d'effets sur bandeau de Led.
 5. [Mise à jour par OTA](#mise-%C3%A0-jour-ota)
    
 ## Fonctionnement 
-L3D permet de :
- * créer des séquences visuelles qui appliquent chacune un effet sur un segment
- * découper virtuellement le bandeau en plusieurs zones (des segments), qui peuvent se superposer si besoin.
- * il peut y avoir 8 séquences en même temps (8 pistes)
- * il est possible de déclencher des sons à un instant donné
- * le programmme peut démarrer/s'arrêter avec à un capteur/bouton
- * tout est configurable depuis une page web
 
-Une séquence est composée :
- * d'un effet
- * de réglages de l'effet (couleurs, rapidité)
- * d'un temps de début
- * d'une durée
+L3D est un projet qui permet de créer des séquences lumineuses personnalisées en appliquant des effets visuels sur des segments de rubans LED.\
+Le bandeau peut être divisé virtuellement en plusieurs zones, appelées segments, qui peuvent se superposer si nécessaire. Jusqu'à huit séquences peuvent être exécutées simultanément sur huit pistes différentes.
 
-Les sons sont stockés en MP3 sur une carte SD sur le DFMiniPlayer (max 32Go).\
-Les fichiers doivent être numérotés avec 4 chiffres, 0001.mp3, 0002.mp3, ...
+Les effets lumineux peuvent être configurés avec des réglages personnalisés tels que des couleurs et des vitesses.\
+Chaque séquence est définie par un temps de début et une durée.\
+Il est également possible de déclencher des sons en même temps que les effets lumineux en utilisant un DFMiniPlayer qui stocke les fichiers MP3 sur une carte SD.\
+Les fichiers doivent être numérotés avec quatre chiffres, par exemple, 0001.mp3, 0002.mp3, etc.
 
-Seul le capteur ultrason HC-SR04 est géré pour le moment.
+L3D peut être démarré ou arrêté à l'aide d'un capteur ultrason HC-SR04 ou d'un bouton.
 
+Tous les réglages, y compris les effets lumineux, les segments, les pistes, les temps de début et de fin, les couleurs et les vitesses, peuvent être facilement configurés depuis une page web.
+
+Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge par L3D.
 
 
 ## Montage
@@ -65,7 +69,7 @@ Une fois connectée sur votre réseau Wifi la carte se retrouve par défaut à l
 En cas de problème de connexion wifi la carte va démarrer en mode AP (Acces Point). Elle se comporte comme une borne wifi sur laquelle vous pouvez vous connecter\
 ssid : L3DAP\
 mot de passe : tonystark\
-Se connecter ensuite sur http://7.7.7.7 parfois http://192.168.4.1 
+Se connecter ensuite sur http://7.7.7.7 (parfois http://192.168.4.1)
 
 ## Flashage
 
@@ -107,6 +111,4 @@ Télécharger le nouveau Filesystem depuis le dossier **OTA** de cette page Gith
 Sur la page de mise à jour OTA de la carte, selectionner **"Filesystem"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
 
 **Attention TOUTES les données présentes sur la carte seront éffacées**\
-*Les fichiers Web seront placés dans le code une fois qu'ils auront passé les phases de test et il ne sera plus possible de faire des mises à jour de Filesystem et ainsi de perdre donc les réglages.\
-Leur mise à jour se fera en même temps que le reste du firmware\
-Il est toujours possible d'éffacer les fichiers de réglages de la carte par la page de configuration*
+Pensez à sauvegarder vos réglages dans des fichiers avant la mise à jour de la partie Filesystem
