@@ -7,15 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Installation L3D</title>
     <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+    <style>
+        :root {
+            --cursor: default;
+            --primary: #0061a3;
+            --secondary: #865300;
+            --tertiary: #006e29;
+            --background: #fdfcff;
+            --outline: #73777f;
+            --primary-container-color: #d1e4ff;
+            --secondary-container-color: #ffddb9;
+            --tertiari-container-color: #85fb94;
+            --surface-color: #fdfcff;
+            --surface-var-color: #dfe2eb;
+        }
+
+        html {
+            font-family: Arial;
+            margin: 0px auto;
+            font-family: 'Roboto Flex', sans-serif;
+            background-color: var(--primary);
+        }
+
+        header,
+        section {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary);
+            color: white;
+            flex-direction: column;
+            margin-bottom: 9%;
+        }
+
+        #titre {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 1% 0 3% 0;
+        }
+
+        esp-web-install-button {
+            margin: 50px 0px;
+        }
+    </style>
 </head>
 
 <body>
-    <!--
-    <div>Installation sans extra</div>
-    <esp-web-install-button manifest="https://demande-a-fred.github.io/L3D/firmware/manifest.json"></esp-web-install-button>
--->
-    <div>Installation de L3D sur carte ESP-32 Dev Kit C V4 ou ESP32 NodeMCU Module WLAN WiFi Dev Kit C</div>
-    <esp-web-install-button manifest="https://demande-a-fred.github.io/L3D/firmware/manifest2.json"></esp-web-install-button>
+    <header>
+        <div id="titre">L3D Web Installer</div>
+        <div>Version : Alpha 0.8.11</div>
+    </header>
+    <section>
+        <div>Installation de L3D sur carte ESP-32 Dev Kit C V4 ou ESP32 NodeMCU Module WLAN WiFi Dev Kit C</div>
+        <esp-web-install-button
+            manifest="https://demande-a-fred.github.io/L3D/firmware/manifest2.json"></esp-web-install-button>
+        <div>Le module d'installation propose un lien pour les pilotes ESP32 si la carte n'est pas reconnue</div>
+    </section>
+
 </body>
 
 </html>
