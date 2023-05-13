@@ -76,8 +76,10 @@ Se connecter ensuite sur http://7.7.7.7 (parfois http://192.168.4.1)
 Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure.\
 Après flashage la carte va redémarrer et l'installeur Web va proposer de connecter la carte à votre wifi.
 
-Le Web installeur se trouve à \
+Le Web installeur se trouve à l'adresse suivante \
 https://demande-a-fred.github.io/L3D/esp.html
+
+Après un flashage réussi, le Web installeur proposera de connecter la carte au réseau wifi.
 
 **Attention TOUTES les données présentes sur la carte seront éffacées**
 
