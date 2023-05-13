@@ -41,37 +41,39 @@ Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge pa
 Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Led_Usb_bb.jpg)
 
-### Led Strip WS2812B uniquement
-Pin 2 utilisée pour le signal Data vers le Led Strip
+### Led Strip WS2812B uniquement | avec alimentation
+- Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Leds.jpg)
 
-### DFMiniPlayer uniquement
+### DFMiniPlayer uniquement | avec alimentation
 Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
-Pin 16 vers TX du DFMiniPlayer\
-Pin 17 vers RX du DFMiniPlayer
+- Pin 16 vers TX du DFMiniPlayer\
+- Pin 17 vers RX du DFMiniPlayer
 ![alt](Img/mp3_bb.jpg)
 
-### HC-SR04 uniquement
-Pin 12 vers Trig du capteur HC-SR04\
-Pin 14 vers Echo du capteur HC-SR04
+### HC-SR04 uniquement | avec alimentation
+- Pin 12 vers Trig du capteur HC-SR04\
+- Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/hc-sr04_bb.jpg)
 
-### Leds Strip WS2812B, DFMiniPlayer, HC-SR04
+### Leds Strip WS2812B, DFMiniPlayer, HC-SR04 | avec alimentation
 Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
-Pin 2 utilisée pour le signal Data vers le Led Strip\
-Pin 16 vers TX du DFMiniPlayer\
-Pin 17 vers RX du DFMiniPlayer\
-Pin 12 vers Trig du capteur HC-SR04\
-Pin 14 vers Echo du capteur HC-SR04
+- Pin 2 utilisée pour le signal Data vers le Led Strip\
+- Pin 16 vers TX du DFMiniPlayer\
+- Pin 17 vers RX du DFMiniPlayer\
+- Pin 12 vers Trig du capteur HC-SR04\
+- Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/all_bb.jpg)
 
 ## Connexion
 
-Une fois connectée sur votre réseau Wifi la carte se retrouve par défaut à l'adresse http://l3d.local \
-En cas de problème de connexion wifi la carte va démarrer en mode AP (Acces Point). Elle se comporte comme une borne wifi sur laquelle vous pouvez vous connecter\
+Une fois connectée sur votre réseau Wifi la carte se retrouve par défaut à l'adresse http://l3d.local
+
+### Mode Acces Point
+En cas de problème de connexion wifi la carte va démarrer en mode AP (Acces Point). Elle se comporte comme une borne wifi sur laquelle vous pouvez vous connecter avec les paramètres suivants\
 ssid : L3DAP\
 mot de passe : tonystark\
-Se connecter ensuite sur http://7.7.7.7 (parfois http://192.168.4.1)
+Ouvrir ensuite une page de navigateur sur http://7.7.7.7 (parfois http://192.168.4.1)
 
 ## Flashage
 
