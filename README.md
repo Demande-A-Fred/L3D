@@ -37,7 +37,7 @@ Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge pa
 
 ## Montage
 
-### Led Strip WS2812B sans alimentation (6/8 Leds)
+### Led Strip WS2812B sans alimentation (6/8 Leds) | par Usb uniquement
 Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Led_Usb_bb.jpg)
 
