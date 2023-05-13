@@ -114,5 +114,5 @@ Il est possible de faire la mise à jour de la partie Web de la carte par cette 
 Télécharger le nouveau Filesystem depuis le dossier **OTA** de cette page Github.\
 Sur la page de mise à jour OTA de la carte, selectionner **"Filesystem"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
 
-**Attention TOUTES les données présentes sur la carte seront éffacées**\
-Pensez à sauvegarder vos réglages dans des fichiers avant la mise à jour de la partie Filesystem
+**Attention TOUTES les données présentes sur la carte seront éffacées\
+Pensez à sauvegarder vos réglages dans des fichiers avant la mise à jour de la partie Filesystem.**
