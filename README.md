@@ -46,22 +46,22 @@ Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Leds.jpg)
 
 ### DFMiniPlayer uniquement | avec alimentation
-Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
-- Pin 16 vers TX du DFMiniPlayer\
+Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....
+- Pin 16 vers TX du DFMiniPlayer
 - Pin 17 vers RX du DFMiniPlayer
 ![alt](Img/mp3_bb.jpg)
 
 ### HC-SR04 uniquement | avec alimentation
-- Pin 12 vers Trig du capteur HC-SR04\
+- Pin 12 vers Trig du capteur HC-SR04
 - Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/hc-sr04_bb.jpg)
 
 ### Leds Strip WS2812B, DFMiniPlayer, HC-SR04 | avec alimentation
-Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....\
-- Pin 2 utilisée pour le signal Data vers le Led Strip\
-- Pin 16 vers TX du DFMiniPlayer\
-- Pin 17 vers RX du DFMiniPlayer\
-- Pin 12 vers Trig du capteur HC-SR04\
+Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....
+- Pin 2 utilisée pour le signal Data vers le Led Strip
+- Pin 16 vers TX du DFMiniPlayer
+- Pin 17 vers RX du DFMiniPlayer
+- Pin 12 vers Trig du capteur HC-SR04
 - Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/all_bb.jpg)
 
