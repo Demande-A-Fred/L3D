@@ -92,7 +92,7 @@ La page de mise à jour propose de télécharger des pilotes.\
 Suivez le lien de téléchargement proposé par l'installeur, installez les pilotes et ouvez à nouveau le lien de flashage au dessus.\
 Pour les ESP de chez AZ Delivery c'est le CP2102 (le premier lien)
 
-
+Plus de détails sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Installation-des-pilotes-et-flashage
 ## Mise à jour OTA
 
 Il est possible de faire des mises à jour à distance (sans cable) après que la carte ait été flashée une première fois par l'outil web.\
