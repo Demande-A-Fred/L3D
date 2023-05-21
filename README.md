@@ -76,7 +76,7 @@ mot de passe : tonystark\
 Ouvrir ensuite une page de navigateur sur http://7.7.7.7 (parfois http://192.168.4.1)
 
 ## Flashage
-
+**Il est impératif de fermer toutes applications qui utilisent les ports séries (Arduino IDE, Visual Studio Code, Cura) ou des onglets de navigateurs déjà ouverts qui utilisent le port série.**\
 Pour flasher la carte avec le programme au complet il suffit de suivre le lien suivant et suivre la procédure.\
 Après flashage la carte va redémarrer et l'installeur Web va proposer de connecter la carte à votre wifi.
 
