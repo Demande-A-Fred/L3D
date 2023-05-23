@@ -106,15 +106,3 @@ Télécharger le nouveau firmware depuis le dossier **OTA** de cette page Github
 Sur la page de mise à jour OTA de la carte, selectionner **"Firmware"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
 
 **Les données de réglages, de configuration, et de séquences seront conservées.**
-
-
-
-### Filesystem
-**Fonctionnalité présente uniquement pendant la phase de test Alpha/Beta**\
-Il est possible de faire la mise à jour de la partie Web de la carte par cette même page OTA.
-
-Télécharger le nouveau Filesystem depuis le dossier **OTA** de cette page Github.\
-Sur la page de mise à jour OTA de la carte, selectionner **"Filesystem"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
-
-**Attention TOUTES les données présentes sur la carte seront éffacées\
-Pensez à sauvegarder vos réglages dans des fichiers avant la mise à jour de la partie Filesystem.**
