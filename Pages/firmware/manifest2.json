@@ -1,6 +1,6 @@
 {
   "name": "L3D",
-  "version": "0.8.12",
+  "version": "0.8.45",
   "new_install_prompt_erase": false,
   "builds": [
     {
@@ -9,8 +9,8 @@
         { "path": "bootloader.bin", "offset": 4096 },
         { "path": "partitions.bin", "offset": 32768 },
         { "path": "ota.bin", "offset": 57344 },
-        { "path": "firmware.bin", "offset": 65536 },
-        { "path": "spiffs.bin", "offset": 2686976 }
+        { "path": "firmware.bin", "offset": 65536 }
+       /* { "path": "spiffs.bin", "offset": 2686976 }*/
       ]
     }
   ]
