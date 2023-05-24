@@ -10,7 +10,7 @@
         { "path": "partitions.bin", "offset": 32768 },
         { "path": "ota.bin", "offset": 57344 },
         { "path": "firmware.bin", "offset": 65536 }
-       /* { "path": "spiffs.bin", "offset": 2686976 }*/
+      
       ]
     }
   ]
