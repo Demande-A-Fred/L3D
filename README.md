@@ -11,10 +11,15 @@ Le séquenceur d'effet est intégré dans l'ESP32 et est facile à personnaliser
 
 Si vous êtes intéressé par les effets de lumière et de son, alors ce projet est fait pour vous !
 
+**Utilisation rapide**
+1) Flashage : https://demande-a-fred.github.io/L3D/esp.html
+2) Montage des leds : [Montage](#montage)
+
+Table des matières
 
 1. [Fonctionnement](#fonctionnement)
 2. [Montage](#montage)
-3. [Connexion](#connexion)
+3. [Connexion](#connexion-%C3%A0-la-carte)
 4. [Flashage](#flashage)
 5. [Mise à jour par OTA](#mise-%C3%A0-jour-ota)
    
@@ -65,7 +70,7 @@ Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0
 - Pin 14 vers Echo du capteur HC-SR04
 ![alt](Img/all_bb.jpg)
 
-## Connexion
+## Connexion à la carte
 
 Une fois connectée sur votre réseau Wifi la carte se retrouve par défaut à l'adresse http://l3d.local
 
