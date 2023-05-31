@@ -93,7 +93,9 @@ Pour les ESP de chez AZ Delivery c'est le CP2102 (le premier lien)
 Plus de détails sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Installation-des-pilotes-et-flashage
 ## Mise à jour OTA
 
-Il est possible de faire des mises à jour à distance (sans cable) après que la carte ait été flashée une première fois par l'outil web.\
+Plus de détails sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Mise-%C3%A0-jour-OTA
+
+Il est possible de faire des mises à jour à distance (sans câble) après que la carte ait été flashée une première fois par l'outil web.\
 Il suffit d'ouvrir votre navigateur sur la carte concernée (par adresse http://ip.de.la.carte ou par son nom, par défaut http://l3d.local). Allez dans l'onglet **Configuration** puis dans la section **Mise à jour OTA**.
 
 
@@ -101,6 +103,6 @@ Il suffit d'ouvrir votre navigateur sur la carte concernée (par adresse http://
 ### Firmware
 
 Télécharger le nouveau firmware depuis le dossier **OTA** de cette page Github.
-Sur la page de mise à jour OTA de la carte, selectionner **"Firmware"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
+Sur la page de mise à jour OTA de la carte, sélectionner **"Firmware"** puis le glisser/déposer dans la fenêtre de mise à jour et suivre le reste de la procédure.
 
 **Les données de réglages, de configuration, et de séquences seront conservées.**
