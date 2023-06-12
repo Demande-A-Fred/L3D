@@ -33,15 +33,17 @@ Le bandeau peut être divisé virtuellement en plusieurs zones, appelées segmen
 
 Les effets lumineux peuvent être configurés avec des réglages personnalisés tels que des couleurs et des vitesses.\
 Chaque séquence est définie par un temps de début et une durée.\
-Il est également possible de déclencher des sons en même temps que les effets lumineux en utilisant un DFMiniPlayer qui stocke les fichiers MP3 sur une carte SD.\
-Les fichiers doivent être numérotés avec quatre chiffres, par exemple, 0001.mp3, 0002.mp3, etc.
+Il est également possible de déclencher des sons en même temps que les effets lumineux en utilisant un DFPlayer Mini mp3 qui stocke les fichiers MP3 sur une carte SD.\
+Les fichiers doivent être numérotés avec quatre chiffres, par exemple, 0001.mp3, 0002.mp3, etc.\
+Plus de détails concernant les sons sur le Wiki :https://github.com/Demande-A-Fred/L3D/wiki/Les-sons
 
 L3D peut être démarré ou arrêté à l'aide d'un capteur ultrason HC-SR04 ou d'un bouton.
 
 Tous les réglages, y compris les effets lumineux, les segments, les pistes, les temps de début et de fin, les couleurs et les vitesses, peuvent être facilement configurés depuis une page web.
 
-Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge par L3D.
+Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge par L3D.\
 
+Plus de détails concernant l'ajout de séquence led/sons/sorties/moteur sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Fonctionnement-du-s%C3%A9quenceur
 
 ## Montage
 Retrouvez sur le wiki tous les détails : https://github.com/Demande-A-Fred/L3D/wiki/Les-montages-possibles
@@ -53,7 +55,7 @@ Pin 2 utilisée pour le signal Data vers le Led Strip
 - Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Leds.jpg)
 
-### Leds Strip WS2812B, DFMiniPlayer, HC-SR04 | avec alimentation
+### Leds Strip WS2812B, DFPlayer Mini mp3, HC-SR04 | avec alimentation
 Carte SD de 32Go maximum, les fichiers doivent être numérotés à 4 chiffres 0001.mp3, 0002.mp3, ....
 - Pin 2 utilisée pour le signal Data vers le Led Strip
 - Pin 16 vers TX du DFMiniPlayer
