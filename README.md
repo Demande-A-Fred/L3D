@@ -5,11 +5,22 @@ L3D est un projet de séquenceur d'effets pour bandeau LED qui permet de créer 
 
 L3D est un mélange d'ESP32 et des rubans LED qui crée une expérience de lumière et de son synchronisée. J'ai travaillé pour concevoir une carte ESP32 qui contrôle les Leds et permet d'ajouter des effets de lumière pour créer une atmosphère immersive.
 
-En plus de cela, j'ai également ajouté une fonctionnalité optionnelle pour lire des fichiers audio en utilisant un DFMiniPlayer connecté à l'ESP32. Cette fonctionnalité permet de synchroniser la lumière et le son pour une expérience encore plus immersive. En utilisant un capteur ultrason, les utilisateurs peuvent même interagir avec l'ensemble pour lire et arrêter la lecture.
+En plus de cela, j'ai également ajouté une fonctionnalité optionnelle pour lire des fichiers audio en utilisant un DFPlayer Mini connecté à l'ESP32. Cette fonctionnalité permet de synchroniser la lumière et le son pour une expérience encore plus immersive. En utilisant un capteur ultrason, les utilisateurs peuvent même interagir avec l'ensemble pour lire et arrêter la lecture.
 
 Le séquenceur d'effet est intégré dans l'ESP32 et est facile à personnaliser. Une page web connectée à la carte permet d'ajouter des séquences supplémentaires et d'ajuster tous les autres réglages, tels que le volume, la luminosité et la découpe du bandeau de Leds en segments virtuels.
 
-Si vous êtes intéressé par les effets de lumière et de son, alors ce projet est fait pour vous !
+***Ajout depuis le début de l'alpha***\
+L3D continue de se développer avec deux fonctionnalités excitantes ajoutées récemment :
+
+1️⃣ Contrôle avancé des sorties : Maintenant, tu peux utiliser les 8 sorties de la carte pour séquencer les sorties on ou off. Cette fonctionnalité étendue te permet de créer des effets lumineux complexes et personnalisés en contrôlant précisément l'état de chaque LED. Que tu souhaites créer des transitions fluides, des motifs dynamiques ou des séquences synchronisées, cette fonctionnalité offre une flexibilité maximale.
+
+2️⃣ Intégration d'un moteur pas à pas : En utilisant 4 des sorties disponibles, L3D peut désormais piloter un moteur pas à pas (stepper). Cette intégration apporte un tout nouveau niveau d'interactivité à tes projets. Tu peux maintenant combiner des effets lumineux avec le mouvement fluide du moteur pas à pas, créant ainsi des animations visuellement captivantes. Que ce soit pour des installations artistiques, des dispositifs cinétiques ou des expériences interactives, cette fonctionnalité ouvre de nouvelles possibilités créatives.
+
+Avec ces nouvelles fonctionnalités, L3D devient encore plus puissant et polyvalent. Que tu sois un passionné de la lumière, un artiste, un ingénieur ou un amateur de DIY, tu pourras exploiter tout le potentiel de ces fonctionnalités pour créer des spectacles visuels uniques et captivants.
+
+N'hésite pas à explorer ces nouvelles fonctionnalités et à laisser libre cours à ta créativité !
+
+J'ai récemment effectué une refonte complète de l'interface de L3D, la rendant plus intuitive et facile à utiliser. Grâce à une meilleure catégorisation des fonctionnalités, les utilisateurs peuvent maintenant naviguer plus facilement et trouver rapidement ce dont ils ont besoin. De plus, j'ai adopté un design inspiré du material design, offrant ainsi une esthétique propre et moderne à l'interface. Une amélioration notable est l'ajout de prévisualisations d'effets en temps réel dans la barre de chaque séquence, permettant aux utilisateurs de visualiser rapidement le résultat visuel de leurs ajustements. En outre, j'ai rendu l'interface responsive, ce qui signifie que les utilisateurs peuvent désormais créer des effets et des séquences depuis leur tablette, leur offrant une plus grande liberté pour interagir avec leur installation. Ces améliorations combinées créent une expérience utilisateur améliorée, facilitant la création d'effets visuels impressionnants et engageants
 
 **Utilisation rapide**
 1) Flashage : https://demande-a-fred.github.io/L3D/esp.html
