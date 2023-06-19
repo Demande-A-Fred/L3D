@@ -32,7 +32,7 @@ J'ai récemment effectué une refonte complète de l'interface de L3D, la rendan
 Table des matières
 
 1. [Fonctionnement](#fonctionnement)
-2. [Montage](#montage)
+2. [Montages](#montages)
 3. [Connexion](#connexion-%C3%A0-la-carte)
 4. [Flashage](#flashage)
 5. [Mise à jour par OTA](#mise-%C3%A0-jour-ota)
@@ -56,7 +56,7 @@ Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge pa
 
 Plus de détails concernant l'ajout de séquence led/sons/sorties/moteur sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Fonctionnement-du-s%C3%A9quenceur
 
-## Montage
+## Montages
 Retrouvez sur le wiki tous les détails : https://github.com/Demande-A-Fred/L3D/wiki/Les-montages-possibles
 ### Led Strip WS2812B sans alimentation (6/8 Leds) | par Usb uniquement
 Pin 2 utilisée pour le signal Data vers le Led Strip
