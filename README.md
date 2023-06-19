@@ -1,5 +1,5 @@
 # L3D
-**Version Alpha, en phase de test**
+**Version Beta, en phase de test**
 
 L3D est un projet de séquenceur d'effets pour bandeau LED qui permet de créer des effets lumineux personnalisés, de déclencher des sons et de réagir à la distance à l'aide d'un capteur ultrason.
 
