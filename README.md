@@ -57,7 +57,7 @@ Notez que pour le moment, seul le capteur ultrason HC-SR04 est pris en charge pa
 Plus de détails concernant l'ajout de séquence led/sons/sorties/moteur sur le Wiki : https://github.com/Demande-A-Fred/L3D/wiki/Fonctionnement-du-s%C3%A9quenceur
 
 ## Montages
-Retrouvez sur le wiki tous les détails : https://github.com/Demande-A-Fred/L3D/wiki/Les-montages-possibles
+Retrouvez sur le wiki plusieurs montages possibles et les détails (HC-SR04 seul, NEMA) : https://github.com/Demande-A-Fred/L3D/wiki/Les-montages-possibles
 ### Led Strip WS2812B sans alimentation (6/8 Leds) | par Usb uniquement
 Pin 2 utilisée pour le signal Data vers le Led Strip
 ![alt](Img/Led_Usb_bb.jpg)
