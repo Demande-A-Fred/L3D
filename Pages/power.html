@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power calculator</title>
+    <style>
+        #led {
+            width: 40px;
+            margin-right: 4px;
+        }
+
+        #titre {
+            font-size: 20pt;
+            margin-bottom: 10px;
+        }
+
+        #total {
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titre">Estimation de puissance maximale</div>
+    <div>
+        <div><input type="checkbox" checked disabled>ESP32 (260mA)</div>
+        <div><input id='mp3' type="checkbox" oninput="calcPower()">DFMiniRobot MP3 (50mA)</div>
+        <div><input id='hc' type="checkbox" oninput="calcPower()">HC-SR04 (15mA)</div>
+        <div><input id='light' type="checkbox" oninput="calcPower()"><input id="led" type="number" min="0" value="0"
+                oninput="updateLed()">Led (60mA/Led)<span id="ledTotal"></span></div>
+        <div>
+            Total <span id="total"></span> mA
+        </div>
+        <script>
+            window.addEventListener('load', init);
+            function $(e) { return document.getElementById(e); }
+            function updateLed() {
+                $('light').checked = ($('led').value > 0) ? true : false;
+                $('ledTotal').innerText = ($('led').value > 0) ? ' = ' + 60 * $('led').value + 'mA' : '';
+                calcPower();
+            }
+            function calcPower() {
+
+                var total = 260 + 50 * ($('mp3').checked === true ? 1 : 0) + 15 * ($('hc').checked === true ? 1 : 0) + 60 * $('led').value * ($('light').checked === true ? 1 : 0);
+                $("total").innerText = total;
+            }
+            function init() {
+                calcPower();
+            }
+        </script>
+</body>
+
+</html>
