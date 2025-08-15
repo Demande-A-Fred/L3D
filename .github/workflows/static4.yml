@@ -31,6 +31,6 @@ jobs:
         with:
           path: './Pages'  # ← remplace par ton dossier réel
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub  Pages
         uses: actions/deploy-pages@v2
 
